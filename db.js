@@ -4,11 +4,11 @@ mongoose.connect(mongoURL, {useNewUrlParser: true,useUnifiedTopology:true, useNe
 var db = mongoose.connection ;
 
 db.on('connected' , ()=> {
-    console.log("MongoDB connected successfully");
+    console.log("MongoDB connected successfully.");
 })
 
 db.on('error' , ()=> {
-    console.log("MongoDB connection failed");
+    console.log("MongoDB connection failed.");
 })
 
 module.exports = mongoose;
