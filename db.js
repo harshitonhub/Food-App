@@ -12,5 +12,3 @@ db.on('error' , ()=> {
 })
 
 module.exports = mongoose;
-
-// new commit
