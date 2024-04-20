@@ -20,32 +20,24 @@ export default function App() {
       const data = await response.json();
       setDishes(data);
     };
+    
     fetchUsers();
   }, []);
+
   return (
     <Router>
-
       <div className="App">
         <Header />
-
         <Routes>
           <Route path="/" element={<Login/>}/>
           <Route path="/signup" element={<Signup/>}/>
-
           <Route path='/home' element={<Home />} />
-
           <Route exact path='/menu' element={<Menu dishes={dishes} />} />
-
           <Route exact path='/about' element={<About />} />
           <Route exact path='/contact' element={<Contact />} />
         </Routes>
-
         <Footer />
-
       </div>
-
     </Router>
-
   )
 }
-

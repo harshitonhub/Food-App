@@ -15,5 +15,4 @@ const dishSchema = mongoose.Schema({
 })
 
 const dishModel = mongoose.model("dishes",dishSchema);
- 
 module.exports = dishModel;
